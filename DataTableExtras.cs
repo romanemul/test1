@@ -83,10 +83,7 @@ namespace RRD
         public string SelectMAX(string Column)
         {
             string val = dt.AsEnumerable().Select(a => a["" + Column + ""]).Max().ToString();
-            //if (dt.Rows[0][0] == null)
-            //{ 
-            //    return; 
-            //}
+           
             return val;
         }
 
